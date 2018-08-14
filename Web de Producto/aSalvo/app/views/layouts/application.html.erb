@@ -3,6 +3,7 @@
   <head>
     <title>ASalvo</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,20 +12,29 @@
   </head>
 
   <body>
-   <header>
+   <header class="cabecera">
     <div class="social_header">
-     
+      <i class="fab fa-twitter iconleft"></i>
+      <i class="fab fa-facebook-f iconleft"></i>
+      <i class="fab fa-instagram iconleft"></i>
+      <!--%= image_tag 'logo1.png'%-->
+      <i class="far fa-user iconright"></i>
+      <i class="fas fa-search iconright"></i>
+
     </div>
-    <nav class="be-red white">
+    <nav class="be-red white large-padding">
      <ul class="no-list row center-xs">
-      <li class="col-md">
-       <%= link_to "Denuncia", root_path%>
+      <li class="col-md denuncia">
+       <%= link_to "Denuncia!", root_path%>
       </li>
       <li class="col-md">
        <%= link_to "Apoyo", root_path%>
       </li>
       <li class="col-md">
        <%= link_to "Educación", root_path%>
+      </li>
+      <li>
+        <%= image_tag 'logo1.png'%>
       </li>
       <li class="col-md">
        <%= link_to "Meetups", root_path%>

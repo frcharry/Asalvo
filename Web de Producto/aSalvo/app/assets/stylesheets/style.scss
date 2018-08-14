@@ -3,16 +3,43 @@ html,body{
  font-family: 'Roboto', sans-serif;
  font-family: 'Roboto Slab', serif;
 }
+a,a:visited{
+  color: inherit;
+  text-decoration: none;
+}
 body{
  /*background: linear-gradient(#FFB2D0,#FEFEFF);*/
- background: pink;
+ //background: pink;
 }
 .be-red{
-
+ //background-color: #FFB2D0;
+ //background: linear-gradient(#FFB2D0,#FEFEFF);
 }
 .white{
- color:darkgray;
+ color:#585858;
 }
 .large-padding{
- padding: 10px, 7px;
+ padding: 10px 7px;
+}
+.cabecera{
+  background: linear-gradient(#FFB2D0,#FEFEFF);
+}
+.no-list{
+  list-style-type: none;
+}
+.denuncia{
+  color:red;
+}
+.iconright{
+  float: right;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+.iconleft{
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.social_header{
+  //display: flex;
+  align-content: center;
 }
