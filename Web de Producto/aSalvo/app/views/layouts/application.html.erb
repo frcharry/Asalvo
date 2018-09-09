@@ -34,7 +34,7 @@
        <%= link_to "Educación", root_path%>
       </li>
       <li>
-        <%= image_tag 'logo1.png'%>
+        <%= image_tag 'logo_opt_3.png' %>
       </li>
       <li class="col-md">
        <%= link_to "Meetups", root_path%>
@@ -48,9 +48,25 @@
      </ul>
     </nav>
    </header>
-   <article class="">
-
-   </article>
+   <section class="welcome">
+     <div class="welcome_container">
+        <%= image_tag 'girl.jpeg', :class => "welcome_image" %> <!-- Crea clase para poner estilos-->
+        <div class="welcome_text">
+          <h1>QUEREMOS VERTE <span class="denuncia">A SALVO</span> </h1>
+          <p>descarga nuestra app!</p>
+          <button type="button" name="button" class="Primary">DESCARGAR</button>
+        </div>
+     </div>
+   </section>
     <%= yield %>
+  <footer class="footer">
+    <div class="">
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </footer>
   </body>
 </html>
