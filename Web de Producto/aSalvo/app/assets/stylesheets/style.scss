@@ -26,6 +26,9 @@ body{
     margin-right: auto;
     height: auto;
 }
+.limpiarFlotante{
+  clear: both;
+}
 .welcome_text{
   z-index: 2;
   position: relative;
