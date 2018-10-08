@@ -1,0 +1,19 @@
+<%= form_for(@user) do |f| %>
+  <%= f.label :usuario_nombre %>
+  <%= f.text_field :usuario_nombre %><br/>
+  <%= f.label :usuario_apellido %>
+  <%= f.text_field :usuario_apellido %><br/>
+  <%= f.label :usuario_mail %>
+  <%= f.text_field :usuario_mail %><br/>
+  <%= f.label :usuario_cel %>
+  <%= f.text_field :usuario_cel %><br/>
+  <%= f.label :usuario_sexo %>
+  <%= f.text_field :usuario_sexo %><br/>
+  <%= f.label :usuario_fechaNacimiento %>
+  <%= f.text_field :usuario_fechaNacimiento %><br/>
+  <%= f.label :usuario_ubicacion %>
+  <%= f.text_field :usuario_ubicacion %><br/>
+  <%= f.label :password_digest %>
+  <%= f.text_field :password_digest %><br/>
+  <%= f.submit "Guardar" %>
+<% end %>
