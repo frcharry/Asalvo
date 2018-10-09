@@ -1,7 +1,0 @@
-{
-  "name": "ASalvo",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
