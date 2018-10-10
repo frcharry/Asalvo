@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  entidad_nombre: MyString
+  entidad_representante: MyString
+  entidad_tel: 1
+  entidad_email: MyString
+  entidad_dir: MyString
+  password_digest: MyString
+
+two:
+  entidad_nombre: MyString
+  entidad_representante: MyString
+  entidad_tel: 1
+  entidad_email: MyString
+  entidad_dir: MyString
+  password_digest: MyString

@@ -1,0 +1,15 @@
+<%= form_for(@entity) do |f| %>
+  <%= f.label :entidad_nombre %>
+  <%= f.text_field :entidad_nombre %><br/>
+  <%= f.label :entidad_representante %>
+  <%= f.text_field :entidad_representante %><br/>
+  <%= f.label :entidad_tel %>
+  <%= f.text_field :entidad_tel %><br/>
+  <%= f.label :entidad_email %>
+  <%= f.text_field :entidad_email %><br/>
+  <%= f.label :entidad_dir %>
+  <%= f.text_field :entidad_dir %><br/>
+  <%= f.label :password_digest %>
+  <%= f.text_field :password_digest %><br/>
+  <%= f.submit "Guardar" %>
+<% end %>
