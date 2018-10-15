@@ -8,3 +8,6 @@
 </ul>
 <%= link_to "Editar", edit_user_path(@user) %><br/>
 <%= link_to "Eliminar", user_path(@user), method: :delete, data:{confirm:"¿Estás Seguro?, esta acción no se puede deshacer"}%><br/>
+<br/>
+<br/>
+<%= link_to "Añadir contacto", new_user_contact_path(@user) %><br/>

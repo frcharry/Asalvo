@@ -1,0 +1,8 @@
+<h1><%= @contact.contacto_nombre%></h1>
+<ul>
+  <li>Teléfono del Contacto: <%= @contact.contacto_cel%></li>
+  <li>E-Mail del contacto: <%= @contact.contacto_mail%></li>
+</ul>
+
+<%= link_to "Editar",edit_contact_path(@contact)%><br/>
+<%= link_to "Eliminar", contact_path(@contact), method: :delete, data:{confirm:"¿Estás Seguro?, esta acción no se puede deshacer"}%><br/> <!--popup de confirmación-->

@@ -1,0 +1,9 @@
+<%= form_for [@user,@contact] do |f|%>
+  <%= f.label :contacto_nombre %>
+  <%= f.text_field :contacto_nombre %><br/>
+  <%= f.label :contacto_cel%>
+  <%= f.text_field :contacto_cel%><br/>
+  <%= f.label :contacto_mail%>
+  <%= f.text_field :contacto_mail%><br/>
+  <%= f.submit "Guardar"%>
+<% end %>

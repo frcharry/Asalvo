@@ -1,0 +1,6 @@
+<%= link_to "Nuevo Contacto", new_contact_path %><br/>
+<br/>
+
+<% @contact.each do |contact|%>
+  <%= link_to contact.contacto_nombre, contact%><br/>
+<%end%>
