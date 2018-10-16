@@ -3,3 +3,6 @@
 <% @users.each do |user|%>
   <%= link_to user.usuario_nombre+" "+user.usuario_apellido,user %><br/>
 <% end %>
+<% @user.contacts.each do|contact|%>
+  <%= link_to contact.contacto_nombre,[@user,material]%><br/>
+<% end %>
