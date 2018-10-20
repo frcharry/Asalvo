@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_20_012631) do
+ActiveRecord::Schema.define(version: 2018_10_20_013255) do
 
   create_table "contacts", force: :cascade do |t|
     t.string "contacto_nombre"
@@ -28,8 +28,15 @@ ActiveRecord::Schema.define(version: 2018_10_20_012631) do
     t.index ["user_id", "contact_id"], name: "index_contacts_users_on_user_id_and_contact_id"
   end
 
-# Could not dump table "emergencies" because of following StandardError
-#   Unknown type 'entities' for column 'user'
+  create_table "emergencies", force: :cascade do |t|
+    t.datetime "emergencia_fecha"
+    t.string "emergencia_ubicacion"
+    t.string "emergencia_data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_emergencies_on_user_id"
+  end
 
   create_table "entities", force: :cascade do |t|
     t.string "entidad_nombre"
