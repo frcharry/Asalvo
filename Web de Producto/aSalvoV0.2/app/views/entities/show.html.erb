@@ -1,9 +1,0 @@
-<h1><%= @entity.entidad_nombre%></h1>
-<ul>
-  <li>Representante: <%=@entity.entidad_representante%></li>
-  <li>Teléfono: <%=@entity.entidad_tel%></li>
-  <li>E-mail: <%=@entity.entidad_email%></li>
-  <li>Dirección: <%=@entity.entidad_dir%></li>
-</ul>
-<%= link_to "Editar", edit_entity_path(@entity) %><br/>
-<%= link_to "Eliminar", entity_path(@entity), method: :delete, data:{confirm:"¿Estás Seguro?, esta acción no se puede deshacer"}%><br/> <!--popup de confirmación-->
