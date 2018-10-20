@@ -1,0 +1,19 @@
+<h1><%= @user.usuario_nombre+" "+@user.usuario_apellido %></h1>
+<ul>
+  <li>Correo: <%=@user.usuario_mail%></li>
+  <li>Cel: <%=@user.usuario_cel%></li>
+  <li>Sexo: <%=@user.usuario_sexo%></li>
+  <li>Fecha de Nacimiento: <%=@user.usuario_fechaNacimiento%></li>
+  <li>Ubicación: <%=@user.usuario_ubicacion%></li>
+</ul>
+<%= link_to "Editar", edit_user_path(@user) %><br/>
+<%= link_to "Eliminar", user_path(@user), method: :delete, data:{confirm:"¿Estás Seguro?, esta acción no se puede deshacer"}%><br/>
+<br/>
+<br/>
+<h1>Contactos</h1>
+<% @user.contacts.each do |contact| %>
+  <%= link_to contact.contacto_nombre, [@user,contact] %><br/>
+<% end %>
+
+<%= link_to "Añadir contacto", new_user_contact_path(@user) %><br/>
+<%= link_to "Crear emergencia", new_emergency_path(@user) %><br/>
