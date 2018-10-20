@@ -1,18 +1,1 @@
-﻿UI Kits/*
-Web de Producto/aSalvoV0.1/*
-Web de Producto/aSalvo/*
-Aplicación Móvil/*
-Backend de Producto/*
-Imagenes/*
-.sourcemaps/*
-node_modules/*
-Prototipo Inicial/*
-.DS_Store
-.editorconfig
-config.xml
-ionic.config.json
-package-lock.json
-package.json
-README.md
-tsconfig.json
-tslint.json
+
