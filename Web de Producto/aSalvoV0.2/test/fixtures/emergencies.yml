@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emergencia_fecha: 2018-10-19 20:32:08
+  emergencia_ubicacion: MyString
+  emergencia_data: MyString
+
+two:
+  emergencia_fecha: 2018-10-19 20:32:08
+  emergencia_ubicacion: MyString
+  emergencia_data: MyString

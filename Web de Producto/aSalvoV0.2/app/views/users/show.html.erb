@@ -10,4 +10,10 @@
 <%= link_to "Eliminar", user_path(@user), method: :delete, data:{confirm:"¿Estás Seguro?, esta acción no se puede deshacer"}%><br/>
 <br/>
 <br/>
+<h1>Contactos</h1>
+<% @user.contacts.each do |contact| %>
+  <%= link_to contact.contacto_nombre, [@user,contact] %><br/>
+<% end %>
+
 <%= link_to "Añadir contacto", new_user_contact_path(@user) %><br/>
+<%= link_to "Crear emergencia", new_emergency_path(@user) %><br/>
