@@ -16,4 +16,8 @@
 <% end %>
 
 <%= link_to "Añadir contacto", new_user_contact_path(@user) %><br/>
-<%= link_to "Crear emergencia", new_emergency_path(@user) %><br/>
+<h1>Emergencias</h1>
+<% @user.emergencies.each do |emergency| %>
+  <%= link_to emergency.emergencia_date, [@user,emergency] %><br/>
+<% end %>
+<%= link_to "Crear emergencia", new_user_emergency_path(@user) %><br/>

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ASalvoV02</title>
+    <title>aSalvo V0.2</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,11 +12,46 @@
   </head>
 
   <body>
+   <header class="cabecera">
+    <div class="social_header">
+      <i class="fab fa-twitter iconleft"></i>
+      <i class="fab fa-facebook-f iconleft"></i>
+      <i class="fab fa-instagram iconleft"></i>
+      <!--%= image_tag 'logo1.png'%-->
+      <a href="users"><i class="far fa-user iconright"></i></a>
+      <i class="fas fa-search iconright"></i>
+
+    </div>
+
+    <!--nav class="be-red white large-padding">
+     <ul class="no-list row center-xs">
+      <li class="col-md denuncia">
+       <%= link_to "Denuncia!", root_path%>
+      </li>
+      <li class="col-md">
+       <%= link_to "Apoyo", root_path%>
+      </li>
+      <li class="col-md">
+       <%= link_to "Educación", root_path%>
+      </li>
+      <li>
+        <%= image_tag 'logo1.png'%>
+      </li>
+      <li class="col-md">
+       <%= link_to "Meetups", root_path%>
+      </li>
+      <li class="col-md">
+       <%= link_to "Encuesta", root_path%>
+      </li>
+      <li class="col-md">
+       <%= link_to "Contáctenos", root_path%>
+     </li>
+     </ul>
+    </nav-->
+   </header>
+   <article class="">
+
+   </article>
     <%= yield %>
-    <% flash.each do |name,msg|%>
-      <%= content_tag(:div, msg, class: "flash"+name)do %>
-        <div><%=msg%></div>
-      <%end%>
-    <%end%>
   </body>
 </html>

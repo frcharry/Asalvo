@@ -1,3 +1,9 @@
 <%= form_for [@user,@emergency] do |f| %>
+  <%= f.label :emergencia_fecha%>
+  <%= f.text_field :emergencia_fecha%><br/>
+  <%= f.label :emergencia_ubicacion%>
+  <%= f.text_field :emergencia_ubicacion%><br/>
+  <%= f.label :emergencia_data%>
+  <%= f.text_field :emergencia_data%><br/>
   <%= f.submit "Guardar" %>
 <% end%>
