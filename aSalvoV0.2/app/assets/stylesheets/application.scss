@@ -1,5 +1,94 @@
-/*@import 'bootstrap';*/
-html,body{
+@import "theme";
+@import "bootstrap";
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+.cabecera{
+  background: linear-gradient(#FFB2D0,#FEFEFF);
+}
+a[class*="denuncia"]{
+  //le da color al texto del item "Denuncia" del navbar
+  color: red;
+}
+nav ul li a{
+  color: #474747;
+}
+.logo{
+
+}
+/* a {
+  color: #fdcc52;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}*/
+
+a:hover, a:focus {
+  color: #fcbd20;
+}
+
+
+#mainNav {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#mainNav .row{
+  //evita que se apilen los ítems del menú
+  flex-wrap: nowrap;
+  text-align: center;
+}
+.no-list{
+  list-style-type: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.wrapper{
+  position: relative;
+}
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  object-fit: fill;
+  position: absolute;
+}
+.welcome{
+  width: 100%;
+}
+.cuadro-mensaje{
+  z-index: 10;
+  opacity: 0.6;
+  background-color: white;
+  position: absolute;
+  //width: 460px;
+  height: 170px;
+  margin: 25%;
+}
+.cuadro-mensaje button {
+  margin-left:35%;
+  border-style: double;
+  border-color:#212529;
+}
+
+.cuadro-mensaje button a{
+  color: #474747;
+}
+strong{
+  color: red;
+}
+/*html,body{
  margin: 0px;
  font-family: 'Roboto', sans-serif;
  font-family: 'Roboto Slab', serif;
@@ -10,7 +99,7 @@ a,a:visited{
 }
 body{
  /*background: linear-gradient(#FFB2D0,#FEFEFF);*/
- /*background: pink;*/
+ /*background: pink;
 }
 .be-red{
  //background-color: #FFB2D0;
@@ -43,4 +132,4 @@ body{
 .social_header{
   //display: flex;
   align-content: center;
-}
+}*/

@@ -32,6 +32,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# Agregamos la gema de bootstrap
+gem 'bootstrap', '~> 4.1.3'
+#JQuery
+gem 'jquery-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -58,10 +62,6 @@ group :test do
   gem 'chromedriver-helper'
   # Rspec
   gem "rspec-rails"
-  #Bootstrap
-  gem 'bootstrap'
-  #JQuery
-  gem 'jquery-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

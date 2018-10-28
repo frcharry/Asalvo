@@ -1,2 +1,13 @@
 
-<h1>Hello, Rails!</h1>
+<section class="masthead">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <%= image_tag("girl.jpg",class:"welcome") %>
+    </div>
+    <div class="cuadro-mensaje">
+      <h2>Queremos verte <strong>ASalvo!</strong></h2><br/>
+      <button type="button" class="btn btn-light "><a href="#playstore">Descargar</a></button>
+    </div>
+  </div>
+  <%= yield %>
+</section>
