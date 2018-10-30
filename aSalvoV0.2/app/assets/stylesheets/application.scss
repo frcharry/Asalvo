@@ -4,6 +4,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 body {
@@ -64,6 +65,7 @@ a:hover, a:focus {
   object-fit: fill;
   position: absolute;
 }
+
 .welcome{
   width: 100%;
 }
@@ -87,6 +89,10 @@ a:hover, a:focus {
 }
 strong{
   color: red;
+}
+footer{
+  margin-top: 500px;
+  clear: both;
 }
 /*html,body{
  margin: 0px;
